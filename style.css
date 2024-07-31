@@ -1,0 +1,209 @@
+/* body style here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background: #F3F1FF;
+    font-family: poppins;
+}
+header{
+    background: #562EFF;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 36px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-container img{
+    width: 10%;
+}
+.logo-container h1{
+    color:#fff;
+}
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 38px;
+    font-size: 16px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.title{
+    color: #562EFF;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+/* first section style here */
+.FirstSection{
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 33px;
+    border-radius: 5px;
+}
+.playerSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 120px;
+}
+.container{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.container img{
+    width: 56px;
+}
+.container p{
+    font-size: 18px;
+    margin: 0;
+}
+hr{
+    width: 75%x;
+    background-color: #D1D1D1;
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* -------------------------
+    Top Blog Style Section
+----------------------------- */
+.blogSection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 65px;
+    row-gap: 13px;
+}
+.blogContainer{
+    width: 430px;
+    display: flex;
+    gap: 15px;
+}
+.blogContainer img{
+    width: 45%;
+}
+.blogContainer p{
+    color: #9F9F9F;
+    font-size: 16px;
+}
+.blogContainer a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+/* Lates Course Section Style here */
+.secondSection{
+    background: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 23px 33px;
+    border-radius: 5px;
+}
+.courseThumbnail{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+.courseContaier{
+    width: 266px;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(243, 241, 241), 0 6px 20px 0 rgba(105, 102, 102, 0.19);
+    padding: 26px 13px;
+}
+.courseContaier img{
+    width: 100%;
+}
+.courseTitle{
+    font-size: 20px;
+    color: #1e1e1e;
+    margin: 0;
+}
+.mentor{
+    font-size: 15px;
+    color: #ed6b4f;
+    margin-top: 7px;
+}
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-star{
+    color: #ffc014;
+}
+.disable{
+    color: rgb(222, 219, 219);
+}
+.rating-container span{
+    color: #a2a2a2;
+    font-size: 15px;
+}
+.time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95px;
+    background: #ffe4eb;
+    border-radius: 15px;
+    color: #ff4a60;
+}
+.time span{
+    color: #ff4a60;
+}
+/* Media Queries for mobile device */
+@media screen and (max-width: 687px) { 
+    header{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-container{
+        justify-content: center;
+    }
+    .playerSection{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+    }
+    .blogSection{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .blogContainer{
+        width: 100%;
+    }
+    .courseThumbnail{
+        flex-direction: column;
+    }
+}
+/* Media Queries for tablet */
+@media screen and (min-width: 688px) and (max-width: 991px) {
+    header{
+        width: 100%;
+    }
+    .title{
+        text-align: center;
+    }
+    .playerSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogSection{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        justify-items: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .courseThumbnail{
+        flex-direction: column;
+    }
+}
